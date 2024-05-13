@@ -2,10 +2,10 @@ import numpy as np
 import streamlit as st
 import pandas as pd
 from pathlib import Path
-from streamlit_pandas_profiling import st_profile_report
+
 import seaborn as sns
 import matplotlib.pyplot as plt
-from pygwalker.api.streamlit import StreamlitRenderer
+
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
 import plotly.express as px
