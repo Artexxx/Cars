@@ -1,6 +1,5 @@
 pandas
 pandas-datareader
-pandas-profiling
 pandas-stubs
 plotly
 pathlib
@@ -14,6 +13,5 @@ streamlit-pandas-profiling
 category_encoders
 numpy
 seaborn
-jupyterlab
 statsmodels
 rich
