@@ -1,16 +1,8 @@
-import sys
-
 import streamlit as st
 import pandas as pd
 from streamlit_option_menu import option_menu
 from pathlib import Path
 from apps import home, prediction
-# from rich.traceback import install
-
-# install(show_locals=True)
-from rich.console import Console
-
-console = Console()
 
 # Конфигурация страницы Streamlit
 st.set_page_config(
@@ -88,7 +80,6 @@ class Menu:
 
 
 if __name__ == '__main__':
-    # try:
     current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
     df = load_data(current_dir / 'autos.csv')
 
@@ -107,8 +98,3 @@ if __name__ == '__main__':
         if app["title"] == selected:
             app["func"](df, current_dir)
             break
-
-    # except Exception as e:
-    #     console.print_exception()
-    #     st.error("Произошла ошибка во время исполнения приложения.", icon="🚨")
-    #     raise
